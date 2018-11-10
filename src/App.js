@@ -85,8 +85,7 @@ class App extends Component {
       })
       .catch(error => {
         this.setState({
-          locationInfo:
-            "We are terribly sorry, it seems the internet has been deleted (we suspect cats did it). Try reloading the page."
+          locationInfo: "App cannot reach Wikipedia. Try reloading the page."
         });
         console.log(error);
       });
