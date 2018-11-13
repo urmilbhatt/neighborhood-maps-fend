@@ -8,7 +8,7 @@ class Place extends Component {
   render() {
     return (
       <div
-        role="presentation"
+        role="button"
         id={this.props.location.name}
         className="place"
         key={this.props.location.name}

@@ -84,10 +84,13 @@ class App extends Component {
         this.animateIn();
       })
       .catch(error => {
-        this.setState({
-          locationInfo: "App cannot reach Wikipedia. Try reloading the page."
-        });
-        console.log(error);
+        this.setState(
+          {
+            locationInfo: "App cannot reach Wikipedia. Try reloading the page.",
+            locationLink: ""
+          },
+          () => this.animateIn()
+        );
       });
   };
 
